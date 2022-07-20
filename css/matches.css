@@ -114,21 +114,16 @@ li{
     gap: 24px;
 }
 
-#showcase .blogs img{
+#showcase .blogs .match-fixture{
+    display: flex;
+    align-items: center;  
+}
+
+#showcase .blogs .match-fixture img{
     width: 100%;
+    margin: 20px;
 }
 
-#showcase .blogs .blog-text a{
-    display: inline-block;
-    color: black;
-    padding: 4px 17px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-#showcase .blogs .blog-text p{
-    padding: 20px 0;
-}
 #showcase .blogs .blog-details{
     border: 1px solid #B9B9B9;
     border-radius: 10px;
@@ -136,6 +131,7 @@ li{
 
 #showcase .blogs .blog-text{
     padding: 20px;
+    text-align: center;
 }
 
 
