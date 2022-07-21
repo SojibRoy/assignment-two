@@ -39,7 +39,7 @@ li{
 
 #banner .banner-title{
     width: 50%;
-    margin: 50px;
+    margin:50px;
 }
 
 #banner .banner-title h1{
@@ -162,7 +162,52 @@ footer ul li a{
     color: #B9B9B9;
 }
 
+footer ul .icons {
+  display: none;
+}
+
 /* Media Queries */
+
+@media only screen and (min-width:669px) and (max-width:992px){
+  
+  #banner .banner-img{
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 100px;
+  }
+  
+  #showcase{
+    flex-direction: column;
+  }
+  
+  #showcase .menu-items{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  #showcase .menu-items li a{
+    padding: 20px;
+  }
+  
+  
+  #showcase .blogs{
+    width: 100%;
+   grid-template-columns: repeat(2,1fr);
+   margin-left: 0px;
+   }
+   
+   #showcase .menu-items li{
+     width: 100%;
+     padding: 4px 17px;
+     border: 1px solid #B9B9B9;
+     border-radius: 10px;
+     text-align: center;
+   }
+}
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
@@ -174,10 +219,12 @@ footer ul li a{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 20px;
 }
 
 #banner .banner-title{
-    width: 50%;
+    width: 100%;
+    margin: 20px;
     text-align: center;
 }
 
@@ -195,8 +242,6 @@ footer ul li a{
     border-radius: 10px;
 }
 
-
-
 #showcase .blogs{
     grid-template-columns: repeat(1,1fr);
 }
@@ -213,5 +258,12 @@ footer ul li{
     padding: 20px;
 }
 
-    
+footer ul:before{
+  content:'';
+}
+
+footer ul .icons{ display:flex;
+  justify-content: center;
+}
+
 }
